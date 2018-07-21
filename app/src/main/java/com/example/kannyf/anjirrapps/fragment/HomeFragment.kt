@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.country_child.view.*
 class HomeFragment : Fragment() {
 
     lateinit var countrylist : RecyclerView
-    var countries : MutableList<String> = ArrayList()
+    var countries : MutableList<String> = mutableListOf()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -30,9 +30,11 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
+        val adapter = CountryAdapter(countries, activity as Context)
         countrylist = view.findViewById(R.id.country_list)
         countrylist.layoutManager = LinearLayoutManager(context)
-        countrylist.adapter = CountryAdapter(this, context)
+        countrylist.adapter = adapter
+        loadData()
     }
 
     class CountryAdapter(items : List<String>,ctx: Context) : RecyclerView.Adapter<CountryAdapter.ViewHolder>(){

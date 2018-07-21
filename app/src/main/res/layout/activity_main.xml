@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/fragmentholder"
         android:orientation="vertical"
-        >
+        tools:ignore="MissingConstraints">
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
