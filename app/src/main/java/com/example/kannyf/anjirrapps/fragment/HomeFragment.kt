@@ -1,24 +1,26 @@
 package com.example.kannyf.anjirrapps.fragment
 
 
-import android.content.ClipData
+
 import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.kannyf.anjirrapps.adapter.CountryAdapter
 
 import com.example.kannyf.anjirrapps.R
-import kotlinx.android.synthetic.main.country_child.view.*
+import com.example.kannyf.anjirrapps.model.PostData
 
 
 class HomeFragment : Fragment() {
 
-    lateinit var countrylist : RecyclerView
-    var countries : MutableList<String> = mutableListOf()
+    
+    lateinit var recyclerView : RecyclerView
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -30,72 +32,21 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        val adapter = CountryAdapter(countries, activity as Context)
-        countrylist = view.findViewById(R.id.country_list)
-        countrylist.layoutManager = LinearLayoutManager(context)
-        countrylist.adapter = adapter
-        loadData()
+        recyclerView = view.findViewById(R.id.country_list)
+        var adapter = CountryAdapter(generated())
+        recyclerView.layoutManager = LinearLayoutManager(context)
+        recyclerView.itemAnimator = DefaultItemAnimator()
+        recyclerView.adapter = adapter
+        adapter.notifyDataSetChanged()
     }
 
-    class CountryAdapter(items : List<String>,ctx: Context) : RecyclerView.Adapter<CountryAdapter.ViewHolder>(){
+    private fun generated(): ArrayList<PostData> {
+        var result = ArrayList<PostData>()
 
-        var list = items
-        var context = ctx
-
-        override fun getItemCount(): Int {
-            return list.size
-            //To change body of created functions use File | Settings | File Templates.
+        for (i in 0..9){
+            var user : PostData = PostData("Liverpool Juara BPL Hongkong", "Liverpool Menjadi Grup Terbaik di PL salah satu klub maha dahsyat")
+            result.add(user)
         }
-
-        override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-            holder.name.text = list[position]
-        }
-
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-            return ViewHolder(LayoutInflater.from(context).inflate(R.layout.country_child, parent, false))
-        }
-
-
-
-        class ViewHolder(v : View) : RecyclerView.ViewHolder(v){
-            val name = v.country_name!!
-        }
-    }
-
-    fun loadData(){
-        countries.add("india")
-        countries.add("United States")
-        countries.add("indonesia")
-        countries.add("Uganda")
-        countries.add("india")
-        countries.add("United States")
-        countries.add("indonesia")
-        countries.add("Uganda")
-        countries.add("india")
-        countries.add("United States")
-        countries.add("indonesia")
-        countries.add("Uganda")
-        countries.add("india")
-        countries.add("United States")
-        countries.add("indonesia")
-        countries.add("Uganda")
-        countries.add("india")
-        countries.add("United States")
-        countries.add("indonesia")
-        countries.add("Uganda")
-        countries.add("india")
-        countries.add("United States")
-        countries.add("indonesia")
-        countries.add("Uganda")
-        countries.add("india")
-        countries.add("United States")
-        countries.add("indonesia")
-        countries.add("Uganda")
-        countries.add("india")
-        countries.add("United States")
-        countries.add("indonesia")
-        countries.add("Uganda")
-
-
+        return result
     }
 }

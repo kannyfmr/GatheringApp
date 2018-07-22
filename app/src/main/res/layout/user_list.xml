@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+   android:background="@drawable/rounded_back"
+    >
+
+    <ImageView
+
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:id="@+id/imgAvatar"
+        android:src="@drawable/ic_photo_black_24dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/imgAvatar"
+        >
+
+        <TextView
+
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:text="Nama"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textComment"
+            android:textSize="9sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/postDate"
+        android:textSize="9sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 1 Jam YangLalu"
+        android:textStyle="bold"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="20dp"
+        />
+    <ImageView
+        android:id="@+id/imgLike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_thumb_up_black_24dp"
+        android:scaleType="fitEnd"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+
+        />
+</RelativeLayout>

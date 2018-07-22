@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/country_list"
-    tools:context="fragment.HomeFragment">
+    tools:context="fragment.HomeFragment"
+    android:background="#dedbdb">
 
 </androidx.recyclerview.widget.RecyclerView>
