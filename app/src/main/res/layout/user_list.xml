@@ -3,65 +3,49 @@
     android:layout_width="match_parent"
     android:layout_height="150dp"
     android:orientation="vertical"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
-   android:background="@drawable/rounded_back"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="5dp"
     >
 
-    <ImageView
-
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_margin="10dp"
-        android:id="@+id/imgAvatar"
-        android:src="@drawable/ic_photo_black_24dp"
-        />
-
-    <LinearLayout
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.MaterialComponents.CardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_toRightOf="@+id/imgAvatar"
-        >
+        android:layout_marginLeft="@dimen/mtrl_card_spacing"
+        android:layout_marginTop="@dimen/mtrl_card_spacing"
+        android:layout_marginRight="@dimen/mtrl_card_spacing"
+        android:minHeight="200dp">
 
-        <TextView
+       <androidx.appcompat.widget.AppCompatImageView
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:src="@drawable/ic_photo_black_24dp"
+           android:layout_marginLeft="5dp"
 
+           />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/textName"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:text="Building Android Using Kotlin"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+
+            />
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="12dp"
-            android:text="Nama"
-            android:textSize="11sp"
-            android:textStyle="bold" />
-        <TextView
             android:id="@+id/textComment"
-            android:textSize="9sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Comment"
+            android:text=" Development "
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="80dp"
+            android:textSize="12dp"
             />
 
-    </LinearLayout>
-    <TextView
-        android:id="@+id/postDate"
-        android:textSize="9sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=" 1 Jam YangLalu"
-        android:textStyle="bold"
-        android:layout_marginTop="110dp"
-        android:layout_marginLeft="20dp"
-        />
-    <ImageView
-        android:id="@+id/imgLike"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_thumb_up_black_24dp"
-        android:scaleType="fitEnd"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="20dp"
-
-        />
+    </com.google.android.material.card.MaterialCardView>
 </RelativeLayout>

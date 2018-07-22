@@ -5,10 +5,15 @@
     android:layout_height="match_parent"
     tools:context=".fragment.NotificationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello Notification" />
+   <com.google.android.material.button.MaterialButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/alertButton"
+       android:text="Notify Me"
+       android:backgroundTintMode="multiply"
+       android:backgroundTint="@color/colorPrimary"
+       android:layout_gravity="center"
+       android:textColor="#ffff"
+       />
 
 </FrameLayout>
