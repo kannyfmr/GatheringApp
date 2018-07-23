@@ -5,15 +5,5 @@
     android:layout_height="match_parent"
     tools:context=".fragment.NotificationFragment">
 
-   <com.google.android.material.button.MaterialButton
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:id="@+id/alertButton"
-       android:text="Notify Me"
-       android:backgroundTintMode="multiply"
-       android:backgroundTint="@color/colorPrimary"
-       android:layout_gravity="center"
-       android:textColor="#ffff"
-       />
 
 </FrameLayout>
