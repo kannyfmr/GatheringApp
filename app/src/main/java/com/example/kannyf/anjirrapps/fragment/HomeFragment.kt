@@ -38,6 +38,8 @@ class HomeFragment : Fragment() {
         recyclerView.itemAnimator = DefaultItemAnimator()
         recyclerView.adapter = adapter
         adapter.notifyDataSetChanged()
+
+
     }
 
     private fun generated(): ArrayList<PostData> {

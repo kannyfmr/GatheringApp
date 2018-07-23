@@ -42,10 +42,28 @@
             android:layout_height="wrap_content"
             android:id="@+id/textComment"
             android:text=" Development "
-            android:layout_marginTop="190dp"
+            android:layout_marginTop="195dp"
             android:layout_marginRight="8dp"
             android:layout_marginLeft="8dp"
             android:textSize="10sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_thumb_up_black_24dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="220dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_comment_black_24dp"
+            android:text="Comment"
+            android:textSize="12sp" />
 
     </com.google.android.material.card.MaterialCardView>
 </RelativeLayout>
