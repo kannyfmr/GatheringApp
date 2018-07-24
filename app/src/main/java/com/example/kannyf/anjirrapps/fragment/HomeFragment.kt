@@ -42,7 +42,7 @@ class HomeFragment : Fragment() {
 
     }
 
-    private fun generated(): ArrayList<PostData> {
+    private fun generated(): MutableList<PostData> {
         var result = ArrayList<PostData>()
 
         for (i in 0..9){
