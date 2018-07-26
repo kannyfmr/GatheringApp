@@ -5,26 +5,301 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.CommunityFragment"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabs"
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="@color/colorPrimary"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabMaxWidth="0dp">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/comunityId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Community" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/followedId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Followed" />
+
+        </com.google.android.material.tabs.TabLayout>
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:tabTextColor="@color/colorPrimary">
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/comunityId"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Community" />
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:clipToPadding="false"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- Row 1 -->
+                <!-- Column 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/car"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/followedId"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Followed" />
+                        <ImageView
+                            android:src="@drawable/ic_van"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="Car"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:textColor="#000000"
+                            android:textSize="25sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
 
-    </com.google.android.material.tabs.TabLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- Column 2 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ship"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/ic_cruise"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="Ship"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:textColor="#000000"
+                            android:textSize="25sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:clipToPadding="false"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- Row 2 -->
+                <!-- Column 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/motorcycle"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/ic_motorcycle"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="Motorcycle"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <!-- Column 2 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bicycle"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/ic_bicycle"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="Bicycle"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:textColor="#000000"
+                            android:textSize="25sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:clipToPadding="false"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- Row 1 -->
+                <!-- Column 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/airplane"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/ic_airplane"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="Airplane"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:textColor="#000000"
+                            android:textSize="25sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <!-- Column 2 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/train"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/ic_train"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="Train"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:textColor="#000000"
+                            android:textSize="25sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:clipToPadding="false"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- Row 1 -->
+                <!-- Column 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/car3"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/ic_van"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="Car"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:textColor="#000000"
+                            android:textSize="25sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <!-- Column 2 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/ic_cruise"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="Car"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:textColor="#000000"
+                            android:textSize="25sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

@@ -10,4 +10,6 @@
     <string name="communities">Communities</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="re_type_password">Re-type Password</string>
 </resources>
