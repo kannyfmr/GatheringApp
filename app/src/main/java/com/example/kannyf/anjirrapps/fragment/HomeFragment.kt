@@ -48,10 +48,10 @@ class HomeFragment : Fragment() {
     private fun generated(): MutableList<PostData> {
         var user = ArrayList<PostData>()
 
-        user.add(PostData("Liverpool Paling Top","Liverpool Adalah Peraih Gelar Terbanyak" ))
-        user.add(PostData("Manchester United Klub Sampah","Sampah EROPA alias Badut UCL" ))
-        user.add(PostData("Barcelona Klub Wasit, Aib Spanyol","Klub tukang nyogok Wasit dan menghalalkan segala Cara" ))
-        user.add(PostData("Liverpool Juara BPL Asia 2 Tahun Berturut - turut","Klub Maha Dah" ))
+        user.add(PostData("Learn Kotlin Fundamental","Android Officially Annouce Support Kotlin", R.drawable.kotlin))
+        user.add(PostData("Learn Android Retrofit","Learn Android Retrofit Learn Android Retrofit", R.drawable.firebase))
+        user.add(PostData("Learn Api using Yii Framework","Learn Android Retrofit Learn Android Retrofit Learn Android Retrofit", R.drawable.firebase ))
+        user.add(PostData("Basic Tutorial Kotlin"," Basic Kotlin Tutoral", R.drawable.retrofit))
 
         return user
 
