@@ -10,14 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="GajeApp">
+            android:name=".Login"
+            android:label="GajeApp"
+            android:theme="@style/AppTheme2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Register"
+            android:theme="@style/AppTheme2"></activity>
     </application>
 
 </manifest>

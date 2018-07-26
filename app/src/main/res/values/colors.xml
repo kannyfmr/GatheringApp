@@ -5,4 +5,7 @@
     <color name="colorAccent">#8b25ce</color>
     <color name="orange">#c855e2</color>
     <color name="white">#ffffff</color>
+    <color name="hint">#FF855E8E</color>
+    <color name="button">#6a1b9a</color>
+    <color name="text_btn">#ffffff</color>
 </resources>
