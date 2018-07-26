@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/fragmentholder"
         android:orientation="vertical"
+        android:layout_marginBottom="70dp"
         tools:ignore="MissingConstraints">
     </LinearLayout>
 

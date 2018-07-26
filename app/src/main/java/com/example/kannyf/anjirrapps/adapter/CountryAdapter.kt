@@ -26,9 +26,9 @@ class CountryAdapter(var items: MutableList<PostData>) : RecyclerView.Adapter<Co
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        var PostData = items[position]
-        holder.textName?.text = PostData.name
-        holder.textComment?.text = PostData.comment
+        var postData = items[position]
+        holder.textName?.text = postData.name
+        holder.textComment?.text = postData.comment
     }
 
 
@@ -41,5 +41,7 @@ class CountryAdapter(var items: MutableList<PostData>) : RecyclerView.Adapter<Co
             this.textName = v.findViewById(R.id.textName)
             this.textComment = v.findViewById(R.id.textComment)
         }
+
+
     }
 }

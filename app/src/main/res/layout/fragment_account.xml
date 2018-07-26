@@ -1,107 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#ede5e5"
-    tools:context=".fragment.AccountFragment">
+    android:layout_height="wrap_content"
+    android:id="@+id/user_account"
+    tools:context="fragment.AccountFragment"
+    android:background="#f1efef">
 
-    <!-- TODO: Update blank fragment layout -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@color/colorPrimary"/>
+    <include layout="@layout/user_data"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@drawable/burnley"
-            android:layout_centerHorizontal="true" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="130dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                app:cardCornerRadius="10dp"
-                app:contentPaddingLeft="15dp"
-                app:contentPaddingRight="15dp"
-                app:contentPaddingBottom="15dp"
-                app:contentPaddingTop="15dp">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Benjamin Burnley"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_gravity="center_horizontal" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Breaking Benjamin Vocalist"
-                    android:layout_gravity="center_horizontal" />
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_email_black_24dp"
-                    android:text="Kannyf.mr@gmail.com"
-                    android:textSize="15sp" />
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_phone_black_24dp"
-                    android:text="+6282210975124"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_wc_black_24dp"
-                    android:text=" Laki - laki"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_wc_black_24dp"
-                    android:text=" California, United States"
-                    android:textSize="15sp"/>
-                <Button
-                    android:layout_marginTop="30dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimary"
-                    android:text="LOGOUT"
-                    android:textSize="18sp"
-                    android:textColor="@color/white" />
-
-            </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-
-    </RelativeLayout>
-
-
-</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

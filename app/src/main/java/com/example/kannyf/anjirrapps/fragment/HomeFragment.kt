@@ -2,24 +2,25 @@ package com.example.kannyf.anjirrapps.fragment
 
 
 
-import android.content.Context
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.kannyf.anjirrapps.adapter.CountryAdapter
-
 import com.example.kannyf.anjirrapps.R
+import com.example.kannyf.anjirrapps.adapter.CountryAdapter
 import com.example.kannyf.anjirrapps.model.PostData
+import kotlinx.android.synthetic.main.user_list.*
 
 
 class HomeFragment : Fragment() {
 
-    
+
     lateinit var recyclerView : RecyclerView
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -40,15 +41,21 @@ class HomeFragment : Fragment() {
         adapter.notifyDataSetChanged()
 
 
+
     }
+
 
     private fun generated(): MutableList<PostData> {
-        var result = ArrayList<PostData>()
+        var user = ArrayList<PostData>()
 
-        for (i in 0..9){
-            var user : PostData = PostData("Liverpool Juara BPL Hongkong", "Liverpool Menjadi Grup Terbaik di PL salah satu klub maha dahsyat")
-            result.add(user)
-        }
-        return result
+        user.add(PostData("Liverpool Paling Top","Liverpool Adalah Peraih Gelar Terbanyak" ))
+        user.add(PostData("Manchester United Klub Sampah","Sampah EROPA alias Badut UCL" ))
+        user.add(PostData("Barcelona Klub Wasit, Aib Spanyol","Klub tukang nyogok Wasit dan menghalalkan segala Cara" ))
+        user.add(PostData("Liverpool Juara BPL Asia 2 Tahun Berturut - turut","Klub Maha Dah" ))
+
+        return user
+
     }
+
+
 }

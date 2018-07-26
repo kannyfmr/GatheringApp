@@ -46,13 +46,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Peringatan keras ")
         builder.setMessage("Yakin Untuk Keluar ?")
         builder.setNegativeButton("tidak") { _: DialogInterface, i: Int -> }
         builder.setPositiveButton("ya") { _: DialogInterface, i: Int -> finish() }
-
         builder.show()
+
+
         buatFragmentsatu()
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)

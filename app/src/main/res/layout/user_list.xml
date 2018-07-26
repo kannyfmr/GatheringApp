@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
-    android:layout_marginTop="10dp">
+    android:layout_marginTop="2dp">
 
     <com.google.android.material.card.MaterialCardView
         style="@style/Widget.MaterialComponents.CardView"
@@ -17,7 +17,8 @@
         android:minHeight="200dp">
 
        <androidx.appcompat.widget.AppCompatImageView
-           android:layout_marginTop="5dp"
+           android:id="@+id/imageView"
+           android:layout_marginTop="8dp"
            android:layout_width="wrap_content"
            android:layout_height="170dp"
            android:src="@drawable/liverpool"
@@ -56,6 +57,7 @@
             android:layout_marginBottom="5dp"/>
 
         <ImageView
+            android:id="@+id/bacaContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
@@ -63,7 +65,7 @@
             android:layout_marginBottom="5dp"
             android:src="@drawable/ic_comment_black_24dp"
             android:text="Comment"
-            android:textSize="12sp" />
+            android:textSize="12sp"/>
 
     </com.google.android.material.card.MaterialCardView>
 </RelativeLayout>

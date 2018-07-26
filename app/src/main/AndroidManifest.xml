@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Re"
+            android:name=".MainActivity"
             android:label="GajeApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
