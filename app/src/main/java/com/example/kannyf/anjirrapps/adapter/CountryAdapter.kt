@@ -4,6 +4,7 @@ package com.example.kannyf.anjirrapps.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kannyf.anjirrapps.R
@@ -26,22 +27,21 @@ class CountryAdapter(var items: MutableList<PostData>) : RecyclerView.Adapter<Co
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        var postData = items[position]
-        holder.textName?.text = postData.name
-        holder.textComment?.text = postData.comment
+        holder.bindItems(items[position])
     }
 
 
 
-    class ViewHolder(v : View) : RecyclerView.ViewHolder(v){
-        var textName : TextView? = null
-        var textComment : TextView? = null
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        init {
-            this.textName = v.findViewById(R.id.textName)
-            this.textComment = v.findViewById(R.id.textComment)
+        fun bindItems(user: PostData) {
+            val listTitle = itemView.findViewById(R.id.textName) as TextView
+            val listDesc  = itemView.findViewById(R.id.textComment) as TextView
+            val listImage  = itemView.findViewById(R.id.imageView) as ImageView
+
+            listTitle.text = user.name
+            listDesc.text = user.comment
+            listImage.setImageResource(user.image)
         }
-
-
     }
 }
