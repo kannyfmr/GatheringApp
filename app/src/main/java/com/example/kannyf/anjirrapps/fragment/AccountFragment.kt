@@ -34,11 +34,6 @@ class AccountFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-        val progressBar : ProgressBar = view?.findViewById(R.id.progressBar)
-
-
-        progressBar.showContextMenu()
         //initialise gson
 
         val gson = GsonBuilder().create()
