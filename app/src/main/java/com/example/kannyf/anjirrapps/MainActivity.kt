@@ -7,10 +7,7 @@ import androidx.appcompat.app.AlertDialog
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
-import com.example.kannyf.anjirrapps.fragment.AccountFragment
-import com.example.kannyf.anjirrapps.fragment.CommunityFragment
-import com.example.kannyf.anjirrapps.fragment.HomeFragment
-import com.example.kannyf.anjirrapps.fragment.NotificationFragment
+import com.example.kannyf.anjirrapps.fragment.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -90,7 +87,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun buatFragmentdua() {
         val transaction = manager.beginTransaction()
-        val fragment = CommunityFragment()
+        val fragment = TabCommunity()
         transaction.replace(R.id.fragmentholder, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
