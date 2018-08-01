@@ -55,7 +55,6 @@ class MainActivity : AppCompatActivity() {
         builder.setPositiveButton("ya") { _: DialogInterface, i: Int -> finish() }
         builder.show()
 
-
         buatFragmentsatu()
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
