@@ -24,6 +24,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Register"
             android:theme="@style/AppTheme1"></activity>
+        <activity android:name=".fragment.AccountFragmentEdit"
+            android:label="Edit Profile"/>
     </application>
 
 </manifest>
