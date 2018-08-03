@@ -1,19 +1,22 @@
 package com.example.kannyf.anjirrapps
 
-import android.content.DialogInterface
 import android.os.Bundle
 import android.view.Menu
-import androidx.appcompat.app.AlertDialog
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
-import com.example.kannyf.anjirrapps.fragment.*
+import com.example.kannyf.anjirrapps.fragment.AccountFragment
+import com.example.kannyf.anjirrapps.fragment.CommunityFragment
+import com.example.kannyf.anjirrapps.fragment.HomeFragment
+import com.example.kannyf.anjirrapps.fragment.NotificationFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.bottomnavigation.LabelVisibilityMode
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
 
     val manager = supportFragmentManager
+
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
@@ -44,13 +47,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        navigation.labelVisibilityMode= LabelVisibilityMode.LABEL_VISIBILITY_LABELED
 
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("Peringatan keras ")
-        builder.setMessage("Yakin Untuk Keluar ?")
-        builder.setNegativeButton("tidak") { _: DialogInterface, i: Int -> }
-        builder.setPositiveButton("ya") { _: DialogInterface, i: Int -> finish() }
-        builder.show()
 
         buatFragmentsatu()
 
