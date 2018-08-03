@@ -50,7 +50,6 @@ class MainActivity : AppCompatActivity() {
         navigation.labelVisibilityMode= LabelVisibilityMode.LABEL_VISIBILITY_LABELED
 
 
-
         buatFragmentsatu()
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
@@ -86,7 +85,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun buatFragmentdua() {
         val transaction = manager.beginTransaction()
-        val fragment = CommunityFragment()
+        val fragment = TabCommunity()
         transaction.replace(R.id.fragmentholder, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
