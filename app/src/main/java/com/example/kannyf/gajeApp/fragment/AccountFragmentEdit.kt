@@ -1,8 +1,8 @@
-package com.example.kannyf.anjirrapps.fragment
+package com.example.kannyf.gajeApp.fragment
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.kannyf.anjirrapps.R
+import com.example.kannyf.gajeApp.R
 
 class AccountFragmentEdit : AppCompatActivity() {
 

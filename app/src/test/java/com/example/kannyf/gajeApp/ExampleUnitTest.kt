@@ -1,4 +1,4 @@
-package com.example.kannyf.anjirrapps
+package com.example.kannyf.gajeApp
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.example.kannyf.anjirrapps
+package com.example.kannyf.gajeApp.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

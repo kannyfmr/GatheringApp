@@ -1,12 +1,16 @@
-package com.example.kannyf.anjirrapps
+package com.example.kannyf.gajeApp.activities
 
 import android.os.Bundle
 import android.util.Patterns
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.kannyf.gajeApp.R
+import com.example.kannyf.gajeApp.api.RetrofitClient
+import kotlinx.android.synthetic.main.activity_register.*
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
@@ -18,7 +22,6 @@ class Register : AppCompatActivity(){
     lateinit var editPassword: EditText
     lateinit var editUsername: EditText
     lateinit var regBtn : Button
-    lateinit var mProgressdialog : ProgressBar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,13 +32,16 @@ class Register : AppCompatActivity(){
         editUsername = findViewById(R.id.regUsername)
         regBtn = findViewById(R.id.SignUp)
 
+
         regBtn.setOnClickListener { userSignup() }
 
     }
 
     private fun userSignup() {
 
-        mProgressdialog.showContextMenu()
+        this@Register.runOnUiThread {
+            progressBar.visibility = View.VISIBLE
+        }
 
         val email = editEmail.text.toString().trim()
         val password = editPassword.text.toString().trim()
@@ -88,6 +94,9 @@ class Register : AppCompatActivity(){
 
             }
         })
+        this@Register.runOnUiThread {
+            progressBar.visibility = View.GONE
+        }
     }
 
 }

@@ -1,4 +1,4 @@
-package com.example.kannyf.anjirrapps
+package com.example.kannyf.gajeApp
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

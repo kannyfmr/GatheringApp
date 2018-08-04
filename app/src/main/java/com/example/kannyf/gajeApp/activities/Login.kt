@@ -1,8 +1,9 @@
-package com.example.kannyf.anjirrapps
+package com.example.kannyf.gajeApp.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.kannyf.gajeApp.R
 import kotlinx.android.synthetic.main.activity_login.*
 
 class Login : AppCompatActivity() {

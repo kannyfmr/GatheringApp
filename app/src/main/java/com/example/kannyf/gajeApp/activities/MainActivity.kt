@@ -1,13 +1,11 @@
-package com.example.kannyf.anjirrapps
+package com.example.kannyf.gajeApp.activities
 
 import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
-import com.example.kannyf.anjirrapps.fragment.AccountFragment
-import com.example.kannyf.anjirrapps.fragment.CommunityFragment
-import com.example.kannyf.anjirrapps.fragment.HomeFragment
-import com.example.kannyf.anjirrapps.fragment.NotificationFragment
+import com.example.kannyf.gajeApp.R
+import com.example.kannyf.gajeApp.fragment.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.bottomnavigation.LabelVisibilityMode
 import kotlinx.android.synthetic.main.activity_main.*
@@ -50,7 +48,6 @@ class MainActivity : AppCompatActivity() {
         navigation.labelVisibilityMode= LabelVisibilityMode.LABEL_VISIBILITY_LABELED
 
 
-
         buatFragmentsatu()
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
@@ -86,7 +83,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun buatFragmentdua() {
         val transaction = manager.beginTransaction()
-        val fragment = CommunityFragment()
+        val fragment = TabCommunity()
         transaction.replace(R.id.fragmentholder, fragment)
         transaction.addToBackStack(null)
         transaction.commit()

@@ -1,4 +1,4 @@
-package com.example.kannyf.anjirrapps.fragment
+package com.example.kannyf.gajeApp.fragment
 
 
 import android.content.Intent
@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
-import com.example.kannyf.anjirrapps.R
+import com.example.kannyf.gajeApp.R
 
 
 class AccountFragment : Fragment() {

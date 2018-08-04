@@ -1,4 +1,4 @@
-package com.example.kannyf.anjirrapps.fragment
+package com.example.kannyf.gajeApp.fragment
 
 
 
@@ -6,16 +6,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.kannyf.anjirrapps.R
-import com.example.kannyf.anjirrapps.adapter.CountryAdapter
-import com.example.kannyf.anjirrapps.model.PostData
-import kotlinx.android.synthetic.main.user_list.*
+import com.example.kannyf.gajeApp.R
+import com.example.kannyf.gajeApp.adapter.CountryAdapter
+import com.example.kannyf.gajeApp.model.PostData
 
 
 class HomeFragment : Fragment() {

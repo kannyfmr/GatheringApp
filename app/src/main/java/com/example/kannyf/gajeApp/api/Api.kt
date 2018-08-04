@@ -1,4 +1,4 @@
-package com.example.kannyf.anjirrapps
+package com.example.kannyf.gajeApp.api
 
 import okhttp3.ResponseBody
 import retrofit2.Call
