@@ -6,6 +6,5 @@
     android:id="@+id/country_list"
     tools:context="fragment.HomeFragment"
     android:background="#f1efef"
-    android:layout_marginBottom="60dp"
-    >
+    android:layout_marginBottom="60dp">
 </androidx.recyclerview.widget.RecyclerView>

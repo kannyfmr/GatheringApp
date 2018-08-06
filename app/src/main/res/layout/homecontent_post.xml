@@ -44,20 +44,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="70dp"
         android:layout_marginTop="10dp"
-        >
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="70dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="8dp"
-            android:textSize="14sp"
             android:text="try to feeling lost , try not let it go, it has only just began time will take our place
 till whole world down, try not wasting breath, try not nothing left, this will be all over soon, is it over yet?"
-            />
+            android:textSize="14sp" />
 
     </RelativeLayout>
     <com.google.android.material.card.MaterialCardView

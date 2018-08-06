@@ -1,4 +1,4 @@
-package com.example.kannyf.anjirrapps.adapter
+package com.example.kannyf.gajeApp.adapter
 
 
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.kannyf.anjirrapps.R
-import com.example.kannyf.anjirrapps.model.PostData
+import com.example.kannyf.gajeApp.R
+import com.example.kannyf.gajeApp.model.PostData
 
 class CountryAdapter(var items: MutableList<PostData>) : RecyclerView.Adapter<CountryAdapter.ViewHolder>(){
 

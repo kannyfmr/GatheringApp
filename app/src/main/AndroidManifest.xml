@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kannyf.anjirrapps">
+    package="com.example.kannyf.gajeApp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -10,21 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Login"
+            android:name="com.example.kannyf.gajeApp.activities.Login"
             android:label="GajeApp"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme2">
+            android:theme="@style/AppTheme1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity
-            android:name=".Register"
-            android:theme="@style/AppTheme2" />
-        <activity android:name=".fragment.TabCommunity"></activity>
+        <activity android:name="com.example.kannyf.gajeApp.activities.MainActivity" />
+        <activity android:name="com.example.kannyf.gajeApp.activities.Register"
+            android:theme="@style/AppTheme1"></activity>
+        <activity android:name="com.example.kannyf.gajeApp.fragment.AccountFragmentEdit"
+            android:label="Edit Profile"/>
     </application>
 
 </manifest>

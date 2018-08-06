@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/E:/Master%20ApP/Folder/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/communication/ic_email_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/media/kannyf/5A50108A50106ECF/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_edit_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,12 +28,10 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="assetSourceType" value="FILE" />
-                            <entry key="height" value="100" />
-                            <entry key="outputName" value="ic_train" />
+                            <entry key="color" value="f4dfeb" />
+                            <entry key="outputName" value="ic_edit_black_24dp" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="E:\project\android\The Room\train.svg" />
-                            <entry key="width" value="100" />
+                            <entry key="sourceFile" value="$APPLICATION_HOME_DIR$/bin/E:\project\android\The Room\train.svg" />
                           </map>
                         </option>
                       </PersistentState>

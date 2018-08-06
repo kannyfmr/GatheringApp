@@ -1,12 +1,12 @@
-package com.example.kannyf.anjirrapps.fragment
+package com.example.kannyf.gajeApp.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.kannyf.anjirrapps.R
-import com.example.kannyf.anjirrapps.adapter.TabsAdapter
+import com.example.kannyf.gajeApp.R
+import com.example.kannyf.gajeApp.adapter.TabsAdapter
 import kotlinx.android.synthetic.main.tab_community.*
 
 class TabCommunity : Fragment() {

@@ -7,6 +7,15 @@
     tools:context="fragment.AccountFragment"
     android:background="#f1efef">
 
-    <include layout="@layout/user_data"/>
+    <LinearLayout
+        android:id="@+id/placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="InvalidId">
+        <include layout="@layout/user_data"/>
+
+    </LinearLayout>
+
 
 </androidx.core.widget.NestedScrollView>

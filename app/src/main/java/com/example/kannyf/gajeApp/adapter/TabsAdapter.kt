@@ -1,9 +1,8 @@
-package com.example.kannyf.anjirrapps.adapter
+package com.example.kannyf.gajeApp.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.kannyf.anjirrapps.fragment.CommunityFollowedFr
 
 class TabsAdapter(fm: FragmentManager): FragmentPagerAdapter(fm){
     private val fragment: ArrayList<Fragment> = ArrayList()
