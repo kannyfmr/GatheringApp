@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="6dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <LinearLayout
+            android:layout_marginLeft="65dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notifPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Komunitas Pecinta Hewan Mamalia"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/notifAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grup pecinta alam"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

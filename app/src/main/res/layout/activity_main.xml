@@ -29,8 +29,6 @@
         app:menu="@menu/navigation"
         app:itemIconSize="18dp"
         app:itemTextAppearanceInactive="@color/colorPrimary"
-        app:itemTextAppearanceActive="@color/merah"
-
-        />
+        app:itemTextAppearanceActive="@color/merah"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

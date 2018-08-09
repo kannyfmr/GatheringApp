@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kannyf.gajeApp">
+    package="com.example.kannyf.anjirrapps">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,8 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.example.kannyf.gajeApp.activities.Login"
-            android:label="GajeApp"
+            android:name="com.example.kannyf.anjirrapps.activities.SplashScreen"
+            android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1">
             <intent-filter>
@@ -22,11 +22,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.kannyf.gajeApp.activities.MainActivity" />
-        <activity android:name="com.example.kannyf.gajeApp.activities.Register"
-            android:theme="@style/AppTheme1"></activity>
-        <activity android:name="com.example.kannyf.gajeApp.fragment.AccountFragmentEdit"
-            android:label="Edit Profile"/>
+        <activity android:name="com.example.kannyf.anjirrapps.activities.Login"
+            android:theme="@style/AppTheme1"/>
+        <activity
+            android:name="com.example.kannyf.anjirrapps.activities.MainActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.example.kannyf.anjirrapps.activities.Register"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.example.kannyf.anjirrapps.fragment.AccountFragmentEdit"
+            android:label="Edit Profile" />
+        <activity android:name="com.example.kannyf.anjirrapps.activities.CategoryActivity" />
     </application>
 
 </manifest>
