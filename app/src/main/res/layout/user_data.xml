@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#ede5e5"
@@ -9,214 +8,67 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:background="@drawable/gradient_background" />
+        android:layout_height="200dp"
+        android:background="@color/colorPrimaryDark"/>
 
-    <RelativeLayout
-        android:id="@+id/menu"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp">
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imageGithub"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_account_circle_black_24dp" />
-
-        <ImageView
-            android:id="@+id/btn_edit"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="64dp"
-            android:layout_marginRight="64dp"
-            android:src="@drawable/ic_edit_black_24dp" />
-
-
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginTop="30dp">
 
-            <androidx.cardview.widget.CardView
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/burnley"
+                android:layout_centerHorizontal="true"
+                android:elevation="1dp"/>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="110dp"
-                android:layout_marginRight="25dp"
-                app:cardCornerRadius="3dp"
-                app:contentPaddingBottom="15dp"
-                app:contentPaddingLeft="15dp"
-                app:contentPaddingRight="15dp"
-                app:contentPaddingTop="15dp">
-
-
-                <LinearLayout
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_marginTop="85dp"
+                    app:contentPaddingLeft="15dp"
+                    app:contentPaddingBottom="15dp"
+                    app:cardCornerRadius="8dp">
 
-                    <TextView
-                        android:id="@+id/tvName"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginBottom="10dp"
-                        android:fontFamily=""
-                        android:text="Benjamin Burnley"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        tools:fontFamily="serif" />
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="Breaking Benjamin Vocalist" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Benjamin Burnley"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            android:layout_marginTop="60dp"
+                            android:layout_gravity="center_horizontal"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile App Developtment"
+                            android:textSize="17sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"/>
 
-                </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-            </androidx.cardview.widget.CardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/account_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="35dp"
-                android:layout_marginRight="25dp"
-                app:cardCornerRadius="3dp"
-                app:contentPaddingBottom="7dp"
-                app:contentPaddingLeft="15dp"
-                app:contentPaddingRight="15dp"
-                app:contentPaddingTop="7dp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_email_black_24dp" />
-
-                <TextView
-                    android:id="@+id/tvEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="40dp"
-                    android:text="Kannyf.mr@gmail.com"
-                    android:textSize="16sp" />
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/account_phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/account_email"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="25dp"
-                app:cardCornerRadius="3dp"
-                app:contentPaddingBottom="7dp"
-                app:contentPaddingLeft="15dp"
-                app:contentPaddingRight="15dp"
-                app:contentPaddingTop="7dp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_phone_black_24dp" />
-
-                <TextView
-                    android:id="@+id/tvPhone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="40dp"
-                    android:text="+6282210975124"
-                    android:textSize="16sp" />
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/account_gender"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/account_phone"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="25dp"
-                app:cardCornerRadius="3dp"
-                app:contentPaddingBottom="7dp"
-                app:contentPaddingLeft="15dp"
-                app:contentPaddingRight="15dp"
-                app:contentPaddingTop="7dp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_wc_black_24dp" />
-
-                <TextView
-                    android:id="@+id/tvGender"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="40dp"
-                    android:text="Laki - laki"
-                    android:textSize="16sp" />
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/account_address"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/account_gender"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="25dp"
-                app:cardCornerRadius="3dp"
-                app:contentPaddingBottom="7dp"
-                app:contentPaddingLeft="15dp"
-                app:contentPaddingRight="15dp"
-                app:contentPaddingTop="7dp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_place_black_24dp" />
-
-                <TextView
-                    android:id="@+id/tvAddress"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="40dp"
-                    android:text="California, United States"
-                    android:textSize="16sp" />
-            </com.google.android.material.card.MaterialCardView>
-
-        </LinearLayout>
-
-    </RelativeLayout>
-    <Button
-        android:id="@+id/buttonLogout"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="25dp"
-        android:background="@drawable/rounded_back"
-        android:text="LOGOUT"
-        android:layout_centerVertical="true"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:layout_below="@+id/menu"
-        android:layout_marginBottom="70dp"
-        />
+            </LinearLayout>
+        </RelativeLayout>
 
 
+    </LinearLayout>
 </RelativeLayout>
