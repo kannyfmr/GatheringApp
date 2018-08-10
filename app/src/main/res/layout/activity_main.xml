@@ -16,7 +16,7 @@
         tools:ignore="MissingConstraints">
     </LinearLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,9 +26,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/navigation"
-        app:itemIconSize="18dp"
-        app:itemTextAppearanceInactive="@color/colorPrimary"
-        app:itemTextAppearanceActive="@color/merah"/>
+        app:itemIconSize="18dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

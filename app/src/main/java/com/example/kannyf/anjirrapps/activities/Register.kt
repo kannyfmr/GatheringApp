@@ -5,9 +5,12 @@ import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kannyf.anjirrapps.R
+import com.example.kannyf.anjirrapps.api.RegisterResponse
 import com.example.kannyf.anjirrapps.api.RetrofitClient
+import dmax.dialog.SpotsDialog
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
@@ -31,7 +34,7 @@ class Register : AppCompatActivity(){
         regBtn = findViewById(R.id.SignUp)
 
 
-        regBtn.setOnClickListener { userSignup() }
+        regBtn.setOnClickListener { userSignup()}
 
     }
 
@@ -72,6 +75,9 @@ class Register : AppCompatActivity(){
             return
         }
 
+        val dialog: android.app.AlertDialog? = SpotsDialog.Builder().setContext(this).setMessage(R.string.registering).build()
+        dialog?.show()
+
         val call = RetrofitClient
                 .instance
                 .api
@@ -79,7 +85,14 @@ class Register : AppCompatActivity(){
 
         call.enqueue(object : Callback<ResponseBody> {
             override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
-                Toast.makeText(this@Register, "successfully register", Toast.LENGTH_LONG).show()
+                try{
+                    val s : String = response.body()!!.toString()
+                } catch (IOException e){
+                    e.pri
+
+                }
+
+                dialog!!.hide()
 
             }
 
@@ -88,7 +101,6 @@ class Register : AppCompatActivity(){
 
             }
         })
-
     }
 
 }
