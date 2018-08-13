@@ -10,11 +10,13 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.kannyf.anjirrapps.R
 import com.example.kannyf.anjirrapps.api.RegisterResponse
 import com.example.kannyf.anjirrapps.api.RetrofitClient
+import com.tapadoo.alerter.Alerter
 import dmax.dialog.SpotsDialog
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.io.IOException
 
 class Register : AppCompatActivity(){
 
@@ -85,15 +87,28 @@ class Register : AppCompatActivity(){
 
         call.enqueue(object : Callback<ResponseBody> {
             override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
-                try{
-                    val s : String = response.body()!!.toString()
-                } catch (IOException e){
-                    e.pri
-
+                dialog?.dismiss()
+                val s = null
+                try {
+                    if(response.code() == 200){
+                        val s = response.body()?.string()
+                        if (s != null) {
+                            Alerter.create(this@Register)
+                                    .setText(s)
+                                    .show()
+                        }
+                    }
+                    else{
+                        val s = response.errorBody()?.string()
+                        if (s != null) {
+                            Alerter.create(this@Register)
+                                    .setText(s)
+                                    .show()
+                        }
+                    }
+                }catch (e: IOException){
+                    e.printStackTrace()
                 }
-
-                dialog!!.hide()
-
             }
 
             override fun onFailure(call: Call<ResponseBody>, t: Throwable) {

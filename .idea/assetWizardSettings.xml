@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/media/kannyf/5A50108A50106ECF/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_add_a_photo_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/media/kannyf/5A50108A50106ECF/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/social/ic_group_add_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,10 +28,12 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="d0d400" />
-                            <entry key="outputName" value="ic_add_a_photo_black_24dp" />
+                            <entry key="color" value="fffffb" />
+                            <entry key="height" value="18" />
+                            <entry key="outputName" value="ic_group_add_black_24dp" />
                             <entry key="overrideSize" value="true" />
                             <entry key="sourceFile" value="$APPLICATION_HOME_DIR$/bin/E:\project\android\The Room\train.svg" />
+                            <entry key="width" value="18" />
                           </map>
                         </option>
                       </PersistentState>

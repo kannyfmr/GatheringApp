@@ -14,11 +14,14 @@
 
        <LinearLayout
            android:layout_width="match_parent"
-           android:layout_height="wrap_content">
+           android:layout_height="match_parent">
+
+
            <de.hdodenhof.circleimageview.CircleImageView
                android:layout_width="50dp"
                android:layout_height="50dp"
-               android:src="@drawable/liverpool"/>
+               android:src="@drawable/liverpool"
+               android:layout_marginLeft="8dp"/>
        </LinearLayout>
        <LinearLayout
            android:layout_marginLeft="65dp"
@@ -42,6 +45,16 @@
                android:layout_height="wrap_content"
                android:text="Grup pecinta alam"
                android:textSize="11sp" />
+           <androidx.appcompat.widget.AppCompatButton
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:text="Join"
+               android:background="@drawable/edit_text_bg"
+               android:textColor="@color/white"
+               android:layout_gravity="right"
+               android:layout_marginRight="8dp"
+               android:drawableLeft="@drawable/ic_group_add_black_24dp"
+               android:paddingStart="10dp"/>
 
        </LinearLayout>
 

@@ -44,11 +44,11 @@ class HomeFragment : Fragment() {
 
     private fun generated(): MutableList<PostData> {
         var user = ArrayList<PostData>()
-
-        user.add(PostData("Learn Kotlin Fundamental","Android Officially Annouce Support Kotlin", R.drawable.kotlin))
-        user.add(PostData("Learn Android Retrofit","Learn Android Retrofit Learn Android Retrofit", R.drawable.firebase))
-        user.add(PostData("Learn Api using Yii Framework","Learn Android Retrofit Learn Android Retrofit Learn Android Retrofit", R.drawable.firebase ))
-        user.add(PostData("Basic Tutorial Kotlin"," Basic Kotlin Tutoral", R.drawable.retrofit))
+        user.add(PostData("Basic Tutorial Kotlin"," Basic Kotlin Tutoral Android Officially Annouce Support KotlinAndroid Officially Annouce Support KotlinAndroid Officially Annouce Support KotlinAndroid Officially Annouce Support Kotlin", R.drawable.retrofit))
+        user.add(PostData("Learn Kotlin Fundamental","Android Officially Annouce Support Kotlin Android Officially Annouce Support KotlinAndroid Officially Annouce Support KotlinAndroid Officially Annouce Support Kotlin", R.drawable.kotlin))
+        user.add(PostData("Learn Android Retrofit","Learn Android Retrofit Learn Android Retrofi t Android Officially Annouce Support KotlinAndroid Officially Annouce Support KotlinAndroid Officially Annouce Support Kotlin", R.drawable.firebase))
+        user.add(PostData("Learn Api using Yii Framework","Learn Android Retrofit Learn Android Retrofit Learn Android Officially Annouce Support KotlinAndroid Officially Annouce Support KotlinAndroid Officially Annouce Support Kotlin Android Retrofit", R.drawable.firebase ))
+        user.add(PostData("Basic Tutorial Kotlin"," Basic Kotlin Tutoral Android Officially Annouce Support KotlinAndroid Officially Annouce Support KotlinAndroid Officially Annouce Support KotlinAndroid Officially Annouce Support Kotlin", R.drawable.retrofit))
 
         return user
 
