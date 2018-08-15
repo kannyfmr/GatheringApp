@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.TabCommunity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    app:layout_constraintTop_toBottomOf="parent"
+    app:layout_constraintBottom_toTopOf="parent"
+    android:layout_marginBottom="60dp">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
