@@ -8,13 +8,11 @@
     tools:context=".activities.MainActivity">
 
     <LinearLayout
+        android:id="@+id/fragmentholder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/fragmentholder"
         android:orientation="vertical"
-        android:layout_marginBottom="70dp"
-        tools:ignore="MissingConstraints">
-    </LinearLayout>
+        tools:ignore="MissingConstraints"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"

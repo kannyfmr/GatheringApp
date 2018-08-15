@@ -1,9 +1,11 @@
 package com.example.kannyf.anjirrapps.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -24,7 +26,7 @@ class Register : AppCompatActivity(){
     lateinit var editPassword: EditText
     lateinit var editUsername: EditText
     lateinit var regBtn : Button
-
+    lateinit var regLogin: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,10 +36,12 @@ class Register : AppCompatActivity(){
         editPassword = findViewById(R.id.regPassword)
         editUsername = findViewById(R.id.regUsername)
         regBtn = findViewById(R.id.SignUp)
+        regLogin = findViewById(R.id.regLogin)
 
 
         regBtn.setOnClickListener { userSignup()}
 
+        regLogin.setOnClickListener { startActivity(Intent(this, Login::class.java)) }
     }
 
     private fun userSignup() {

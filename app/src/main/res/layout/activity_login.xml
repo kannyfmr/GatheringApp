@@ -8,7 +8,7 @@
     android:background="#5d1049">
 
     <ImageView
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="70dp"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:src="@drawable/theroomwhite"/>
@@ -66,8 +66,7 @@
                 android:textColor="@color/white"
                 android:gravity="right"
                 android:layout_marginBottom="20dp"
-                android:layout_marginEnd="18dp"
-                android:fontFamily=""/>
+                android:layout_marginEnd="18dp"/>
 
 
             <Button
@@ -82,7 +81,8 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="20dp"
-                android:fontFamily="monospace"/>
+                android:fontFamily="monospace"
+                />
 
             <TextView
                 android:id="@+id/tv_register"

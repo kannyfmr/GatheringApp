@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#ede5e5"
-    android:orientation="vertical">
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_marginBottom="60dp">
 
     <View
         android:layout_width="match_parent"
@@ -13,207 +14,232 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp">
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-        <RelativeLayout
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotoProfil"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:elevation="5dp"
+            android:src="@drawable/burnley" />
+
+        <TextView
+            android:id="@+id/uFullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp">
+            android:text="Androinida Kotlina"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/uUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#99000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/uUsername2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Androinida"
+                android:textAlignment="center"
+                android:textColor="#99000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/uGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followed Community: "
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/uGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <androidx.cardview.widget.CardView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    app:contentPaddingLeft="15dp"
-                    app:contentPaddingBottom="15dp"
-                    app:cardCornerRadius="1dp">
-                    <ImageView
-                        android:layout_marginTop="80dp"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/ic_add_a_photo_black_24dp"/>
+                    android:layout_marginTop="20dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_marginTop="5dp"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/burnley"
-                        android:elevation="1dp"/>
+                        android:id="@+id/imageEmail"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_email_black_24dp" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
                         android:orientation="vertical">
 
                         <TextView
-                            android:paddingLeft="25dp"
-                            android:layout_width="wrap_content"
+                            android:id="@+id/uEmail"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Benjamin Burnley"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:layout_marginTop="60dp"
-                            android:layout_gravity="center_horizontal"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Mobile App Developtment"
-                            android:textSize="17sp"
-                            android:layout_marginTop="10dp"
-                            android:layout_gravity="center_horizontal"/>
-
+                            android:text="Gathering Apps@Apps.com"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
+                </LinearLayout>
+
+                <include layout="@layout/divider" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    app:contentPaddingLeft="15dp"
-                    app:contentPaddingBottom="15dp"
-                    app:cardCornerRadius="0dp">
+                    android:layout_marginTop="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imagePhone"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_phone_android_black_24dp" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_gravity="center_vertical"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/ic_face_black_24dp"/>
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
                         <TextView
-                            android:paddingLeft="20dp"
-                            android:layout_width="wrap_content"
+                            android:id="@+id/uPhone"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Kannyf.mr@gmail.com"
-                            android:textSize="17sp"
-                            android:layout_marginTop="10dp"/>
+                            android:text="+6282003948832"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
+                </LinearLayout>
+
+                <include layout="@layout/divider" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="0.5dp"
-                    app:contentPaddingLeft="15dp"
-                    app:contentPaddingBottom="15dp"
-                    app:cardCornerRadius="3dp">
+                    android:layout_marginTop="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageGender"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_wc_black_24dp" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_gravity="center_vertical"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/ic_face_black_24dp"/>
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
                         <TextView
-                            android:paddingLeft="20dp"
-                            android:layout_width="wrap_content"
+                            android:id="@+id/uGender"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Kannymr"
-                            android:textSize="17sp"
-                            android:layout_marginTop="10dp"/>
+                            android:text="Laki-laki"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
+                </LinearLayout>
+
+                <include layout="@layout/divider" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    app:contentPaddingLeft="15dp"
-                    app:contentPaddingBottom="15dp"
-                    app:cardCornerRadius="0dp">
+                    android:layout_marginTop="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageAddress"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_place_black_24dp" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_gravity="center_vertical"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/ic_phone_android_black_24dp"/>
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
                         <TextView
-                            android:paddingLeft="20dp"
-                            android:layout_width="wrap_content"
+                            android:id="@+id/uAddress"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="+6282210975124"
-                            android:textSize="17sp"
-                            android:layout_marginTop="10dp"/>
+                            android:text="Jepara, Central Java"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
+                </LinearLayout>
+
+                <include layout="@layout/divider" />
+
+                <include
+                    layout="@layout/divider"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    app:contentPaddingLeft="15dp"
-                    app:contentPaddingBottom="15dp"
-                    app:cardCornerRadius="0dp">
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_gravity="center_vertical"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/ic_wc_black_24dp"/>
-                        <TextView
-                            android:paddingLeft="20dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Laki - Laki"
-                            android:textSize="17sp"
-                            android:layout_marginTop="10dp"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0.5dp"
-                    app:contentPaddingLeft="15dp"
-                    app:contentPaddingBottom="15dp"
-                    app:cardCornerRadius="0dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_gravity="center_vertical"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/ic_place_black_24dp"/>
-                        <TextView
-                            android:paddingLeft="20dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Silicon Vallley, USA"
-                            android:textSize="17sp"
-                            android:layout_marginTop="10dp"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
                 <Button
-                    android:layout_marginBottom="30dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="LOGOUT"
-                    android:background="@drawable/edit_text_bg"
-                    android:textColor="@color/white"
-                    />
+                    android:id="@+id/signOut"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:text="SIGN OUT"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
 
+                <include layout="@layout/divider" />
             </LinearLayout>
-        </RelativeLayout>
 
-
+        </androidx.core.widget.NestedScrollView>
     </LinearLayout>
 </RelativeLayout>
