@@ -30,13 +30,18 @@ class MainActivity : AppCompatActivity() {
                 buatFragmentdua()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_notifications -> {
+            R.id.navigation_search -> {
                 buatFragmenttiga()
+
+            }
+
+            R.id.navigation_notifications -> {
+                buatFragmentempat()
                 return@OnNavigationItemSelectedListener true
             }
 
             R.id.navigation_account -> {
-                buatFragmentempat()
+                buatFragmentlima()
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -74,12 +79,20 @@ class MainActivity : AppCompatActivity() {
     }
     private fun buatFragmenttiga() {
         val transaction = manager.beginTransaction()
-        val fragment = NotificationFragment()
+        val fragment = SearchFragment()
         transaction.replace(R.id.fragmentholder, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
     }
     private fun buatFragmentempat() {
+        val transaction = manager.beginTransaction()
+        val fragment = NotificationFragment()
+        transaction.replace(R.id.fragmentholder, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+
+    }
+    private fun buatFragmentlima(){
         val transaction = manager.beginTransaction()
         val fragment = AccountFragment()
         transaction.replace(R.id.fragmentholder, fragment)

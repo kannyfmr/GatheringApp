@@ -3,6 +3,7 @@ package com.example.kannyf.anjirrapps.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kannyf.anjirrapps.R
@@ -15,6 +16,7 @@ class CategoryAdapter(private val userList : ArrayList<Category> ) : RecyclerVie
 
         holder.textName.text = user.name
         holder.textAddress.text = user.address
+        holder.userImage.setImageResource(user.image)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -29,6 +31,7 @@ class CategoryAdapter(private val userList : ArrayList<Category> ) : RecyclerVie
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
         val textName = itemView.findViewById(R.id.description) as TextView
         val textAddress = itemView.findViewById(R.id.author) as TextView
+        val userImage = itemView.findViewById(R.id.categoryImage) as ImageView
 
     }
 }

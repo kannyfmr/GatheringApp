@@ -25,16 +25,16 @@ class CategoryActivity : AppCompatActivity() {
         val users = ArrayList<Category>()
 
 
-        users.add(Category("Komunitas pecinta Binatang", "grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewangrup berkumpulnya pecinta hewangrup berkumpulnya pecinta hewangrup berkumpulnya pecinta hewan"))
-        users.add(Category("Aliansi Liverpool Garis Kerad", "Komunitas anti Baper grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewangrup berkumpulnya pecinta hewan"))
-        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan"))
-        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan"))
-        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan"))
-        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan"))
-        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan"))
-        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan"))
-        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan"))
-        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan"))
+        users.add(Category("Komunitas pecinta Binatang", "grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewangrup berkumpulnya pecinta", R.drawable.retrofit))
+        users.add(Category("Aliansi Liverpool Garis Kerad", "Komunitas anti Baper grup berkumpulnya pecinta hewan grup berkumpulnya pecinta hewan grup", R.drawable.kotlin))
+        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta", R.drawable.firebase))
+        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta", R.drawable.liverpool))
+        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta", R.drawable.firebase))
+        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta ", R.drawable.kotlin))
+        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta", R.drawable.liverpool))
+        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta ",R.drawable.retrofit))
+        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta", R.drawable.retrofit))
+        users.add(Category("Komunitas Atheis INDONESIA", "berkumpulnya para atheis grup berkumpulnya pecinta hewan grup berkumpulnya pecinta ", R.drawable.firebase))
 
 
         val adapter = CategoryAdapter(users)

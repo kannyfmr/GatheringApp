@@ -1,3 +1,3 @@
 package com.example.kannyf.anjirrapps.model
 
-class Category (var name : String, var address : String )
+class Category (var name : String, var address : String, var image : Int )

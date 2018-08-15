@@ -11,5 +11,6 @@
     <color name="merah">#ff5e00</color>
     <color name="hijau">#2dd624</color>
     <color name="kuning">#efd40b</color>
+    <color name="hitam">#000000</color>
 
 </resources>

@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.kannyf.anjirrapps.R
 import com.example.kannyf.anjirrapps.api.LoginResponse
 import com.example.kannyf.anjirrapps.api.RetrofitClient
+import dmax.dialog.SpotsDialog
 import kotlinx.android.synthetic.main.activity_login.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -27,7 +28,7 @@ class Login : AppCompatActivity() {
         editPassword = findViewById(R.id.password)
 
         tv_register.setOnClickListener { startActivity(Intent(this, Register::class.java)) }
-        login.setOnClickListener {startActivity(Intent(this, MainActivity::class.java))}
+        login.setOnClickListener {startActivity(Intent(this@Login, MainActivity::class.java))}
 
 
     }
@@ -50,6 +51,9 @@ class Login : AppCompatActivity() {
             return
         }
 
+        val dialog: android.app.AlertDialog? = SpotsDialog.Builder().setContext(this).setMessage(R.string.logging).build()
+        dialog?.show()
+
         val call = RetrofitClient
                 .instance
                 .api
@@ -63,13 +67,16 @@ class Login : AppCompatActivity() {
                     Toast.makeText(this@Login, loginResponse.getMessage(), Toast.LENGTH_LONG).show()
                     val intent = Intent(this@Login, MainActivity::class.java)
                     startActivity(intent)
+                    dialog?.dismiss()
 
                 } else {
                     Toast.makeText(this@Login, "gagal anjirr", Toast.LENGTH_LONG).show()
+                    dialog?.dismiss()
                 }
             }
             override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
                 Toast.makeText(this@Login, "error", Toast.LENGTH_LONG).show()
+                dialog?.dismiss()
             }
 
         })
